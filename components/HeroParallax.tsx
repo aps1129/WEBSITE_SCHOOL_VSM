@@ -21,7 +21,7 @@ export default function HeroParallax() {
           src="/Photos/School.png"
           alt="VSM School Campus"
           fill
-          className="object-cover"
+          className="object-cover object-top md:object-center"
           priority
           sizes="100vw"
         />
@@ -40,7 +40,7 @@ export default function HeroParallax() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-4 leading-tight"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-white mb-4 leading-tight"
         >
           Vinita Singh Memorial School
         </motion.h1>
@@ -76,7 +76,7 @@ export default function HeroParallax() {
         >
           <Link
             href="/admissions"
-            className="group px-8 py-4 rounded-full bg-[#d4a535] hover:bg-[#e5b84a] text-[#0f172a] font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center gap-2"
+            className="group px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-[#d4a535] hover:bg-[#e5b84a] text-[#0f172a] font-bold text-base sm:text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center gap-2"
           >
             Admissions Open 2026-27
             <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -84,7 +84,7 @@ export default function HeroParallax() {
 
           <Link
             href="/contact"
-            className="group px-8 py-4 rounded-full bg-white/10 backdrop-blur-sm text-white font-semibold text-lg border border-white/30 hover:bg-white/20 transition-all duration-300 shadow-lg transform hover:-translate-y-1 flex items-center gap-2"
+            className="group px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-white/10 backdrop-blur-sm text-white font-semibold text-base sm:text-lg border border-white/30 hover:bg-white/20 transition-all duration-300 shadow-lg transform hover:-translate-y-1 flex items-center gap-2"
           >
             <Phone className="h-5 w-5" />
             Contact Us

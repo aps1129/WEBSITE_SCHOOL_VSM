@@ -59,6 +59,11 @@ export default function AboutPage() {
 
     const leadership = [
         {
+            name: "Mr. Navneet Kumar Singh",
+            role: "Director",
+            description: "Visionary leader driving VSM School towards new heights of academic and holistic excellence.",
+        },
+        {
             name: "Mr. Surendra Kumar Singh",
             role: "Director",
             description: "Providing strategic vision and direction to VSM School with dedication to educational excellence.",
@@ -73,9 +78,9 @@ export default function AboutPage() {
     const achievements = [
         {
             icon: Trophy,
-            number: "25+",
-            title: "Years of Excellence",
-            description: "A legacy of quality education since 1998",
+            number: "CBSE",
+            title: "Affiliated School",
+            description: "Recognized excellence in education standards",
         },
         {
             icon: GraduationCap,
@@ -136,7 +141,7 @@ export default function AboutPage() {
                             About VSM School
                         </h1>
                         <p className="text-xl text-zinc-200 max-w-3xl mx-auto">
-                            For over 25 years, we have been nurturing young minds and shaping the leaders of tomorrow
+                            For decades, we have been nurturing young minds and shaping the leaders of tomorrow
                             in Narora, Bulandshahr.
                         </p>
                     </motion.div>
@@ -287,7 +292,7 @@ export default function AboutPage() {
                         whileInView="visible"
                         viewport={{ once: true }}
                         variants={containerVariants}
-                        className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 max-w-2xl mx-auto"
+                        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto"
                     >
                         {leadership.map((leader) => (
                             <motion.div

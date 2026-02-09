@@ -83,12 +83,7 @@ export default function Navbar() {
                     <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary group-hover:w-3/4 transition-all duration-300 rounded-full" />
                   </Link>
                 ))}
-                <Link
-                  href="/login"
-                  className="ml-2 px-6 py-2 rounded-full bg-primary text-white text-sm font-medium hover:bg-primary-dark transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-                >
-                  Student Login
-                </Link>
+
               </div>
 
               {/* Mobile menu button */}
@@ -129,19 +124,7 @@ export default function Navbar() {
                       </Link>
                     </motion.div>
                   ))}
-                  <motion.div
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: navLinks.length * 0.1 }}
-                  >
-                    <Link
-                      href="/login"
-                      className="block w-full text-center bg-primary text-white px-6 py-3 rounded-full hover:bg-primary-dark transition-colors duration-200 font-medium mt-4 shadow-lg"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      Student Login
-                    </Link>
-                  </motion.div>
+
                 </div>
               </motion.div>
             )}

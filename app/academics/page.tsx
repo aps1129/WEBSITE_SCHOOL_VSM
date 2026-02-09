@@ -53,7 +53,7 @@ export default function AcademicsPage() {
 
     const features = [
         { icon: Clock, title: "Regular PTMs", description: "Monthly parent-teacher meetings for progress review" },
-        { icon: Award, title: "Co-curricular Activities", description: "Debates, quizzes, and cultural programs" },
+        { icon: Award, title: "Co-curricular", description: "Debates, quizzes, and cultural programs" },
         { icon: Library, title: "Library Access", description: "Extensive collection of books and digital resources" },
         { icon: Laptop, title: "Smart Classes", description: "Interactive digital learning in every classroom" },
     ];
