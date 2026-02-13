@@ -15,7 +15,7 @@ export default function Footer() {
 
   const socialLinks = [
     { icon: Phone, href: "tel:+919319497275", label: "Call" },
-    { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
+    { icon: Instagram, href: "https://www.instagram.com/v.s.m_school_narora_?igsh=eHo1ZTh3bXlodW81", label: "Instagram" },
     { icon: Mail, href: "mailto:vsmsnarora@gmail.com", label: "Email" },
   ];
 

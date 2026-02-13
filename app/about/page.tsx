@@ -10,7 +10,6 @@ import {
     Star,
     GraduationCap,
     Sparkles,
-    Trophy,
     Shield,
     Lightbulb,
     Globe
@@ -75,32 +74,7 @@ export default function AboutPage() {
         },
     ];
 
-    const achievements = [
-        {
-            icon: Trophy,
-            number: "CBSE",
-            title: "Affiliated School",
-            description: "Recognized excellence in education standards",
-        },
-        {
-            icon: GraduationCap,
-            number: "5000+",
-            title: "Successful Alumni",
-            description: "Graduates excelling across diverse fields",
-        },
-        {
-            icon: Award,
-            number: "100%",
-            title: "CBSE Results",
-            description: "Consistent academic performance",
-        },
-        {
-            icon: Users,
-            number: "100+",
-            title: "Dedicated Faculty",
-            description: "Experienced and passionate educators",
-        },
-    ];
+
 
     const whyUs = [
         {

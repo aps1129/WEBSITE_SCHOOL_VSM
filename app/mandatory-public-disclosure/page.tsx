@@ -103,10 +103,10 @@ const tabs: TabData[] = [
             files: [
                 {
                     name: "Society Registration.pdf",
-                    url: "/documents/Society.pdf",
+                    url: "/documents/Society-1.pdf",
                 },
             ],
-            showOnlyFirstPage: true,
+
         },
     },
     {
@@ -352,12 +352,12 @@ function PDFContent({ content }: { content: TabContent }) {
                             </div>
                         </div>
                         {content.showOnlyFirstPage ? (
-                            <div className="relative w-full h-[600px] sm:h-[700px] lg:h-[800px] overflow-hidden">
+                            <div className="relative w-full h-[400px] sm:h-[600px] lg:h-[800px] overflow-hidden">
                                 <iframe
-                                    src={`${file.url}#page=1&view=Fit`}
-                                    className="w-full h-[200%] pointer-events-none"
+                                    src={`${file.url}#page=1&view=FitH&toolbar=0&navpanes=0&scrollbar=0`}
+                                    className="w-full h-[400px] sm:h-[600px] lg:h-[800px] pointer-events-none"
                                     title={file.name}
-                                    style={{ transform: "scale(1)", transformOrigin: "top left" }}
+                                    style={{ clipPath: "inset(0 0 0 0)" }}
                                 />
                             </div>
                         ) : (
