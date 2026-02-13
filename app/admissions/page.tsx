@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import {
     FileText,
-    Calendar,
+
     Phone,
     CheckCircle,
     Download,
@@ -48,13 +48,7 @@ export default function AdmissionsPage() {
         "Medical Fitness Certificate",
     ];
 
-    const importantDates = [
-        { event: "Admission Forms Available", date: "January 15, 2026" },
-        { event: "Form Submission Deadline", date: "March 15, 2026" },
-        { event: "Entrance Assessment", date: "March 25-30, 2026" },
-        { event: "Result Announcement", date: "April 5, 2026" },
-        { event: "New Session Begins", date: "April 1, 2026" },
-    ];
+
 
     const whyJoinUs = [
         {
@@ -281,46 +275,7 @@ export default function AdmissionsPage() {
                 </div>
             </section>
 
-            {/* Important Dates */}
-            <section className="py-24 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        className="text-center mb-16"
-                    >
-                        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-zinc-900 mb-4 sm:mb-6">
-                            Important Dates
-                        </h2>
-                        <p className="text-xl text-zinc-600 max-w-2xl mx-auto">
-                            Mark your calendar for the 2026-27 admission cycle
-                        </p>
-                    </motion.div>
 
-                    <motion.div
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true }}
-                        variants={containerVariants}
-                        className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 lg:gap-6"
-                    >
-                        {importantDates.map((item, index) => (
-                            <motion.div
-                                key={index}
-                                variants={itemVariants}
-                                className="bg-gradient-to-br from-zinc-50 to-zinc-100 rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-zinc-200 text-center hover:shadow-lg transition-shadow"
-                            >
-                                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
-                                    <Calendar className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
-                                </div>
-                                <p className="text-zinc-600 text-[10px] sm:text-xs mb-1 sm:mb-2 line-clamp-2">{item.event}</p>
-                                <p className="text-zinc-900 font-display font-bold text-xs sm:text-sm lg:text-base">{item.date}</p>
-                            </motion.div>
-                        ))}
-                    </motion.div>
-                </div>
-            </section>
 
             {/* Contact CTA */}
             <section id="apply" className="py-24 bg-gradient-to-br from-primary via-primary-dark to-primary text-white relative overflow-hidden">

@@ -141,7 +141,7 @@ export default function AboutPage() {
                             About VSM School
                         </h1>
                         <p className="text-xl text-zinc-200 max-w-3xl mx-auto">
-                            For decades, we have been nurturing young minds and shaping the leaders of tomorrow
+                            We have been nurturing young minds and shaping the leaders of tomorrow
                             in Narora, Bulandshahr.
                         </p>
                     </motion.div>

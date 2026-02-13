@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { MapPin, Phone, Mail, Clock, Send, CheckCircle, Facebook, Twitter, Instagram, Youtube } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Send, CheckCircle, Twitter, Instagram, Youtube } from "lucide-react";
 
 export default function ContactPage() {
     const [formData, setFormData] = useState({ name: "", email: "", phone: "", subject: "", message: "" });
@@ -22,7 +22,7 @@ export default function ContactPage() {
     ];
 
     const socials = [
-        { icon: Facebook, href: "#", label: "Facebook" },
+        { icon: Phone, href: "tel:+919319497275", label: "Call Us" },
         { icon: Twitter, href: "#", label: "Twitter" },
         { icon: Instagram, href: "#", label: "Instagram" },
         { icon: Youtube, href: "#", label: "YouTube" },
@@ -119,12 +119,17 @@ export default function ContactPage() {
                     <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-6 sm:mb-8">
                         <h2 className="text-2xl sm:text-3xl font-display font-bold text-zinc-900">Find Us</h2>
                     </motion.div>
-                    <div className="rounded-2xl overflow-hidden shadow-xl h-[400px] bg-zinc-200 flex items-center justify-center">
-                        <div className="text-center text-zinc-500">
-                            <MapPin className="h-12 w-12 mx-auto mb-4" />
-                            <p className="text-lg font-semibold">VSM School</p>
-                            <p className="text-sm">78, Wazidpur Road, Narora, Bulandshahr</p>
-                        </div>
+                    <div className="rounded-2xl overflow-hidden shadow-xl h-[400px]">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3516.5!2d78.3811639!3d28.1866326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390b34a8f4d14989%3A0xec05ad21d2282409!2sV%20S%20M%20SCHOOL%20NARORA!5e0!3m2!1sen!2sin!4v1707900000000!5m2!1sen!2sin"
+                            width="100%"
+                            height="100%"
+                            style={{ border: 0 }}
+                            allowFullScreen
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            title="VSM School Narora Location"
+                        />
                     </div>
                 </div>
             </section>

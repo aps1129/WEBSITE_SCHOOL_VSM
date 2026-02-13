@@ -55,15 +55,18 @@ body {
 
 @keyframes marquee {
   from {
-    transform: translateX(0);
+    transform: translateX(0) translateZ(0);
   }
   to {
-    transform: translateX(calc(-100% - 4rem));
+    transform: translateX(calc(-50% - 2rem)) translateZ(0);
   }
 }
 
 .animate-marquee {
-  animation: marquee 30s linear infinite;
+  animation: marquee 40s linear infinite;
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .animate-marquee:hover {

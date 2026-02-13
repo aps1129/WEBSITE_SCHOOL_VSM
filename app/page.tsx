@@ -94,9 +94,7 @@ export default function Home() {
   const notices = [
     "🎓 Admissions Open for Session 2026-27 — Apply Now!",
     "📚 Annual Examinations — March 2026",
-    "🏆 Annual Sports Meet — February 15, 2026",
-    "👨‍👩‍👧 Parent-Teacher Meeting — Last Saturday of Every Month",
-    "🎭 Annual Day Celebration — March 28, 2026",
+    "🇮🇳 Republic Day Celebration — January 26, 2026",
     "📖 New Session Begins — April 1, 2026",
   ];
 
@@ -128,7 +126,7 @@ export default function Home() {
                 className="text-xl text-zinc-700 mb-6 leading-relaxed"
               >
                 Established with a vision to provide quality education, VSM School has been a beacon of
-                academic excellence in Narora for decades. Our institution is committed to nurturing young
+                academic excellence in Narora. Our institution is committed to nurturing young
                 minds and preparing them for the challenges of tomorrow.
               </motion.p>
               <motion.p

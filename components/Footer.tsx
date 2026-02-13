@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Facebook, Instagram, Mail, Phone, MapPin } from "lucide-react";
+import { Phone, Instagram, Mail, MapPin } from "lucide-react";
 import Logo from "./Logo";
 
 export default function Footer() {
@@ -10,10 +10,11 @@ export default function Footer() {
     { name: "Admissions", href: "/admissions" },
     { name: "Gallery", href: "/gallery" },
     { name: "Contact", href: "/contact" },
+    { name: "Mandatory Public Disclosure", href: "/mandatory-public-disclosure" },
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: "https://facebook.com", label: "Facebook" },
+    { icon: Phone, href: "tel:+919319497275", label: "Call" },
     { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
     { icon: Mail, href: "mailto:vsmsnarora@gmail.com", label: "Email" },
   ];

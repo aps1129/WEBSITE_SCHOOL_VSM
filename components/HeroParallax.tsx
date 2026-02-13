@@ -11,17 +11,17 @@ export default function HeroParallax() {
   const opacity = useTransform(scrollY, [0, 400], [1, 0]);
 
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className="relative h-screen min-h-[600px] w-full overflow-hidden">
       {/* Background Image */}
       <motion.div
         style={{ y: y1 }}
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 scale-110 sm:scale-100"
       >
         <Image
           src="/Photos/School.png"
           alt="VSM School Campus"
           fill
-          className="object-cover object-top md:object-center"
+          className="object-cover object-center"
           priority
           sizes="100vw"
         />
