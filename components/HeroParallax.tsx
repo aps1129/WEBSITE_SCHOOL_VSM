@@ -11,7 +11,7 @@ export default function HeroParallax() {
   const opacity = useTransform(scrollY, [0, 400], [1, 0]);
 
   return (
-    <div className="relative h-[70vh] sm:h-screen min-h-[500px] w-full overflow-hidden">
+    <div className="relative h-[85vh] sm:h-screen min-h-[500px] w-full overflow-hidden">
       {/* Background Image */}
       <motion.div
         style={{ y: y1 }}
@@ -21,7 +21,7 @@ export default function HeroParallax() {
           src="/Photos/School.png"
           alt="VSM School Campus"
           fill
-          className="object-cover object-top sm:object-center"
+          className="object-cover object-[center_30%] sm:object-center"
           priority
           sizes="100vw"
         />
@@ -33,14 +33,14 @@ export default function HeroParallax() {
       {/* Content - CENTERED */}
       <motion.div
         style={{ opacity }}
-        className="relative z-20 flex flex-col items-center justify-center h-full px-4 sm:px-6 lg:px-8 text-center"
+        className="relative z-20 flex flex-col items-center justify-center h-full px-4 sm:px-6 lg:px-8 text-center pt-16 sm:pt-0"
       >
         {/* Main School Name */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-white mb-4 leading-tight"
+          className="text-[1.75rem] sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-sans sm:font-display font-bold text-white mb-4 leading-tight tracking-tight"
         >
           Vinita Singh Memorial School
         </motion.h1>
