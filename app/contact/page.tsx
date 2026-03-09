@@ -16,7 +16,7 @@ export default function ContactPage() {
 
     const contactInfo = [
         { icon: MapPin, title: "Address", content: "78, Wazidpur Road, Narora\nBulandshahr, Uttar Pradesh\nIndia" },
-        { icon: Phone, title: "Phone", content: "+91 93194 97275\n+91 92112 85756" },
+        { icon: Phone, title: "Phone", content: "+91 93194 97275" },
         { icon: Mail, title: "Email", content: "vsmsnarora@gmail.com" },
         { icon: Clock, title: "Office Hours", content: "Mon - Sat: 8:00 AM - 3:00 PM\nSunday: Closed" },
     ];
